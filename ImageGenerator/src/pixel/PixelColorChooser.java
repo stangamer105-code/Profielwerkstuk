@@ -86,5 +86,16 @@ public class PixelColorChooser {
         return image;
     }
 
+    public static BufferedImage RGBColorChooser(int width, int height) {
+        var image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        var random = RandomGenerator.getDefault();
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                image.setRGB(x, y, random.nextInt(0x1000000));
+            }
+        }
+        return image;
+    }
+
 
 }
