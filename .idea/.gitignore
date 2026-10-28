@@ -8,6 +8,8 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+# by products
+noise.png
 
 ### Java ###
 # Compiled class file
